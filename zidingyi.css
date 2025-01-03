@@ -1,0 +1,378 @@
+/* 申明当前css文件是UTF-8字符编码 */
+@charset "UTF-8";
+
+/*清除所有元素内外间距*/
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+input,
+button,
+textarea {
+  border: none;
+  padding: 0;
+  margin: 0;
+  /*去掉input默认的蓝色边框*/
+  outline-style: none;
+}
+
+/* 去掉li默认的样式 */
+li {
+  list-style: none;
+}
+
+input {
+  font-family: "Microsoft YaHei";
+}
+
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+
+/* 去掉文本域可以被拉大的效果 */
+textarea {
+  resize: none;
+}
+
+img {
+  border: 0;
+  display: block;
+  /*去除底边的像素*/
+}
+
+/*清除浮动最现代、最流行的方式*/
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/* 去掉a的默认底线 */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+i {
+  font-style: normal;
+}
+
+b {
+  font-weight: normal;
+}
+
+/* 去掉h1- h6的标签默认样式 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+/* 版心 */
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(192, 199, 210);
+  -webkit-border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #9f9f9f;
+}
+
+::-webkit-scrollbar-arrow {
+  color: #f00;
+  backgound: #0f0;
+}
+
+body {
+  cursor: url(../../img/b.cur), default;
+  font-family: "LXGW WenKai Screen", sans-serif;
+}
+
+a:hover {
+  cursor: url(../../img/a.cur), pointer;
+}
+
+a:hover,
+a:focus {
+  color: #000 !important;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.form-inline {
+  margin-top: 8px;
+}
+
+.header {
+  /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+  position: relative;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.header a img {
+  display: inline-block;
+  height: 50px;
+  width: 150px;
+}
+
+.header .top-title {
+  position: absolute;
+  bottom: 5px;
+  left: 180px;
+  font-size: 15px;
+  color: #bdbbb8;
+}
+
+@media only screen and (max-width: 750px) {
+  #time {
+    display: none;
+  }
+}
+
+#time {
+  float: right;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+.title {
+  height: 40px;
+  line-height: 40px;
+  margin-top: 10px;
+  border-bottom: 1px dashed #999;
+}
+
+.title span:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  color: #444;
+}
+
+.title .remark {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999;
+}
+
+.waring {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f4e1b8;
+  border-radius: 8px;
+}
+
+.main {
+  margin-top: 20px;
+}
+
+.main .col {
+  margin-bottom: 14px;
+  padding: 0 7px;
+}
+
+.main .title {
+  margin-left: -7px;
+  width: 85%;
+  height: 45px;
+  color: #444;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 45px;
+}
+
+.main .col .box-link {
+  display: block;
+  overflow: hidden;
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #f7f7f7;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.main .col .box-link .new {
+  position: relative;
+  top: -42px;
+  right: -4px;
+  float: right;
+  width: 30px;
+  height: 14px;
+  background: #fff url(../../images/new1.png);
+  background-size: cover;
+}
+
+.main .box-img {
+  height: 40px;
+  color: #555;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.main .box-img img {
+  float: left;
+  display: block;
+  margin-right: 5px;
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.main .box-img .name {
+  float: left;
+  display: block;
+  overflow: hidden;
+  padding: 10px 3px 3px 3px;
+  max-width: 62%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.main .box-text {
+  overflow: hidden;
+  margin-top: 3px;
+  height: 25px;
+  max-width: 99.5%;
+  color: #777;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.main .box-link:hover {
+  -moz-box-shadow: 4px 4px 10px rgba(180, 195, 255, 0.35);
+  box-shadow: 4px 4px 10px rgba(180, 195, 255, 0.35);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+}
+
+.main .box-link:hover .card-tit {
+  color: #f70;
+}
+
+@media only screen and (max-width: 950px) {
+  .navbar .form-inline {
+    display: none;
+  }
+
+  .isphone {
+    display: block;
+  }
+
+  .ispc {
+    display: none;
+  }
+}
+
+.footer {
+  padding-top: 15px;
+  border-top: 1px dashed #999;
+  box-sizing: border-box;
+  height: 75px;
+  text-align: center;
+  position: relative;
+  z-index: 99;
+}
+
+.footer a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #999;
+}
+
+.footer p {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #999;
+}
+
+.footer a:nth-child(n + 1) {
+  margin-left: 20px;
+}
+
+html .sakana-box {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 80;
+}
+
+@media (max-width: 960px) {
+  .sakana-box {
+    display: none;
+  }
+}

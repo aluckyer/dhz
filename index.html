@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 设置页面的字符编码为UTF-8 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- 页面标题，显示在浏览器标签页上 -->
+    <title>小队长网址导航</title>
+    <!-- 页面的关键词，用于搜索引擎优化等，便于搜索引擎识别页面相关主题 -->
+    <meta name="keywords" content="AK47网址导航,AK47导航,AK网址导航,AK导航,网址导航,绿色导航,无广告导航,网址大全,网址导航,AK47网址大全,上网导航,网址,laoyee,老夜" />
+    <!-- 页面的描述信息，同样有助于搜索引擎了解页面大致内容 -->
+    <meta name="description" content="AK47整理的一些常用的在线站点" />
+    <!-- 页面作者信息 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!-- 告知浏览器以IE的最新版本模式渲染页面 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置页面视口，使其宽度自适应设备宽度，初始缩放比例为1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 设置页面的图标（favicon），一般显示在浏览器标签页的左上角 -->
+
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <!-- 引入自定义的外部样式表，用于页面整体样式定制 -->
+    <link href="zidingyi.css" rel="stylesheet" type="text/css">
+    <!-- 引入页面统计相关的JavaScript脚本文件 -->
+    <script>
+        // 更新时间显示的脚本
+        function updateTime() {
+            const now = new Date(); // 获取当前时间
+            // 格式化日期时间为字符串
+            const options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+            const gregorian = new Intl.DateTimeFormat('zh-CN', options).format(now);
+            document.getElementById("time").innerHTML = `${gregorian}`; // 将格式化后的时间插入到页面中
+        }
+        setInterval(updateTime, 1000); // 每秒调用一次 updateTime 函数更新时间
+    </script>
+</head>
+
+<body>
+    <!-- 页面头部的容器，用于放置相关元素 -->
+    <div class="container header">
+        <!-- 链接到网站首页，点击可返回首页 -->
+        <a href="#">
+            <img src="https://aimindwork.com/wp-content/uploads/2024/11/image-235-1024x771.jpeg">
+        </a>
+        <!-- 显示页面标题中的一部分，用于页面内标题展示 -->
+        <span class="top-title">——&nbsp;&nbsp;拉萨小队长导航站</span>
+        <!-- 此处可能用于动态显示时间等信息，目前为空，后续可能通过脚本填充 -->
+        <span id="time"></span>
+    </div>
+
+    <!-- 用于显示分类标题“综合”的容器 -->
+    <div class="container title">
+        <span>综合</span>
+    </div>
+    <!-- 主要内容区域的容器，用于放置综合分类下的各个AI站点链接等内容 -->
+    <div class="container main">
+        <!-- 使用Bootstrap的响应式网格系统，根据不同屏幕尺寸设置列数，这里表示在不同屏幕尺寸下每行显示的列数 -->
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
+            <!-- 每一个col代表网格系统中的一列，放置一个AI站点相关信息 -->
+            <div class="col">
+                <!-- 链接到ChatGPT站点，在新标签页中打开 -->
+                <a href="https://chatgpt.com/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <!-- 显示ChatGPT对应的图标 -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ChatGPT-Logo.svg/1024px-ChatGPT-Logo.svg.png">
+                        <!-- 显示站点名称 -->
+                        <span class="name">ChatGPT</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.doubao.com/chat/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://www.doubao.com/chat/">
+                        <span class="name">豆包</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://chatglm.cn/main/detail" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://chatglm.cn/main/detail">
+                        <span class="name">智谱清言</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://yuanbao.tencent.com/chat/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://yuanbao.tencent.com/chat/">
+                        <span class="name">腾讯元宝</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://tongyi.aliyun.com/qianwen/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://tongyi.aliyun.com/qianwen/">
+                        <span class="name">通义千问</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://xinghuo.xfyun.cn/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://xinghuo.xfyun.cn/">
+                        <span class="name">讯飞星火</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://monica.im/zh_CN/home" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://monica.im/zh_CN/home">
+                        <span class="name">Monica</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://yiyan.baidu.com" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://yiyan.baidu.com">
+                        <span class="name">文心一言</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://kimi.moonshot.cn" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://kimi.moonshot.cn">
+                        <span class="name">Kimi</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://poe.com/chats" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://poe.com/chats">
+                        <span class="name">Poe</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://ying.baichuan-ai.com/chat" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://ying.baichuan-ai.com/chat">
+                        <span class="name">百小应</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://wukong.com/tool" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://wukong.com/tool">
+                        <span class="name">小悟空</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://hailuoai.com/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://hailuoai.com/">
+                        <span class="name">海螺</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://yuewen.cn/chats/new" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://yuewen.cn/svg/favicon.svg">
+                        <span class="name">跃问</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.tiangong.cn/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://www.tiangong.cn/">
+                        <span class="name">天工</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://chat.deepseek.com/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://cdn.deepseek.com/platform/favicon.png">
+                        <span class="name">DeepSeek</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 用于显示分类标题“绘画设计”的容器 -->
+    <div class="container title">
+        <span>绘画设计</span>
+    </div>
+    <!-- 主要内容区域的容器，用于放置绘画设计分类下的各个相关站点链接等内容 -->
+    <div class="container main">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
+            <div class="col">
+                <a href="https://www.midjourney.com/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://bu.dusays.com/2024/05/23/664edd3e8339c.png">
+                        <span class="name">Midjourney</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://aigc.360.com/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://aigc.360.com/">
+                        <span class="name">360智绘</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.gaoding.com/ai?hmsr=ak47s-ak47s-gd--gdai-gdai-bdqd&utm_source=ak47s"
+                    class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://www.gaoding.com/">
+                        <span class="name">稿定AI</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 用于显示分类标题“效率提升”的容器 -->
+    <div class="container title">
+        <span>效率提升</span>
+    </div>
+    <!-- 主要内容区域的容器，用于放置效率提升分类下的各个相关站点链接等内容 -->
+    <div class="container main">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
+            <div class="col">
+                <a href="https://xiezuocat.com/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://xiezuocat.com/">
+                        <span class="name">秘塔写作猫</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://ibiling.cn/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://ibiling.cn/">
+                        <span class="name">笔灵AI写作</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://cloud.tencent.com/product/acc" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://cloud.tencent.com">
+                        <span class="name">腾讯代码助手</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://github.com/features/copilot/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://github.com/">
+                        <span class="name">Copilot</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://comate.baidu.com/zh" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://comate.baidu.com/zh">
+                        <span class="name">百度智能编程</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 用于显示分类标题“其它”的容器 -->
+    <div class="container title">
+        <span>其它</span>
+    </div>
+    <!-- 主要内容区域的容器，用于放置其它分类下的各个相关站点链接等内容 -->
+    <div class="container main">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
+            <div class="col">
+                <a href="https://ailegal.baidu.com/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://ailegal.baidu.com/">
+                        <span class="name">法行宝</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://tongyi.aliyun.com/farui" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://tongyi.aliyun.com/farui">
+                        <span class="name">通义法睿</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://ai.hao.360.com/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://ai.hao.360.com/">
+                        <span class="name">360AI导航</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页面底部的容器，用于放置版权、相关链接等信息 -->
+    <div class="footer container mt10">
+        <!-- 显示版权信息，表明版权归属及版权时间范围 -->
+        <p>Copyright &copy; 2025-<span class="get-year">至今</span> 拉萨小队长 版权所有</p>
+    </div>
+
+</body>
+
+</html>
