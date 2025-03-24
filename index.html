@@ -26,7 +26,6 @@
         // 更新时间显示的脚本
         function updateTime() {
             const now = new Date(); // 获取当前时间
-            // 格式化日期时间为字符串
             const options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
             const gregorian = new Intl.DateTimeFormat('zh-CN', options).format(now);
             document.getElementById("time").innerHTML = `${gregorian}`; // 将格式化后的时间插入到页面中
@@ -162,13 +161,10 @@
 
 
     
-    <!-- 用于显示分类标题“综合”的容器 -->
     <div class="container title">
         <span>社区冲浪榜</span>
     </div>
-    <!-- 主要内容区域的容器，用于放置综合分类下的各个AI站点链接等内容 -->
     <div class="container main">
-        <!-- 使用Bootstrap的响应式网格系统，根据不同屏幕尺寸设置列数，这里表示在不同屏幕尺寸下每行显示的列数 -->
         <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
             
             <!-- 生活助手 -->
@@ -251,45 +247,20 @@
                     </div>
                 </a>
             </div>
-            <div class="col">
-                <a href="" class="box-link" target="_blank">
-                    <div class="box-img">
-                        <span class="name"></span>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="" class="box-link" target="_blank">
-                    <div class="box-img">
-                        <span class="name"></span>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="" class="box-link" target="_blank">
-                    <div class="box-img">
-                        <span class="name"></span>
-                    </div>
-                </a>
-            </div>
             
-            
-           
             
             
         </div>
     </div>
     
+
     
-    <!-- 用于显示分类标题“其它”的容器 -->
     <div class="container title">
-        <span>创作工具榜</span>
+        <span>学术创作榜</span>
     </div>
-    <!-- 主要内容区域的容器，用于放置其它分类下的各个相关站点链接等内容 -->
     <div class="container main">
         <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
 
-             <!-- 生产助手 -->
             <div class="col">
                 <a href="https://app.yinxiang.com/client/web#?anb=true&" class="box-link" target="_blank">
                     <div class="box-img">
@@ -354,19 +325,94 @@
                     </div>
                 </a>
             </div>
-            
             <div class="col">
-                <a href="https://weread.qq.com/" class="box-link" target="_blank">
+                <a href="https://www.zhiyunwenxian.cn/" class="box-link" target="_blank">
                     <div class="box-img">
-                        <img src="https://api.xinac.net/icon/?url=https://weread.qq.com/">
-                        <span class="name">微信读书</span>
+                        <img src="https://api.xinac.net/icon/?url=https://www.zhiyunwenxian.cn/">
+                        <span class="name">知云文献翻译</span>
                     </div>
                 </a>
             </div>
             <div class="col">
-                <a href="https://60s.quickso.cn/" class="box-link" target="_blank">
+                <a href="https://bj.96weixin.com/tools/symbol" class="box-link" target="_blank">
                     <div class="box-img">
-                        <img src="https://api.xinac.net/icon/?url=https://60s.quickso.cn/">
+                        <img src="https://api.xinac.net/icon/?url=https://bj.96weixin.com/tools/symbol">
+                        <span class="name">符号大全</span>
+                    </div>
+                </a>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+    
+    <div class="container title">
+        <span>资源工具榜</span>
+    </div>
+    <div class="container main">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
+
+            <div class="col">
+                <a href="https://cloud.huawei.com/home#/home" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://cloud.huawei.com/home#/home">
+                        <span class="name">华为云空间</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.bejson.com/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://www.bejson.com/">
+                        <span class="name">Bejson</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://guatizi.com/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://guatizi.com/">
+                        <span class="name">挂梯子</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://drop.space/space?t=mine" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://drop.space/space?t=mine">
+                        <span class="name">Drop</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://greasyfork.org/en" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://greasyfork.org/en">
+                        <span class="name">油猴</span>
+                    </div>
+                </a>
+            </div>
+            
+
+            
+            
+        </div>
+    </div>
+
+    
+
+    <div class="container title">
+        <span>杂七杂八榜</span>
+    </div>
+    <div class="container main">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
+            
+            <div class="col">
+                <a href="https://xvfr.com/60s.html" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://xvfr.com/60s.html">
                         <span class="name">每天60s</span>
                     </div>
                 </a>
@@ -388,26 +434,10 @@
                 </a>
             </div>
             <div class="col">
-                <a href="https://dnipkggqxh.feishu.cn/wiki/C5XGwG6ITiWxNmkEhNOcCtYbntd?sheet=s1sV61" class="box-link" target="_blank">
+                <a href="https://ima.qq.com/" class="box-link" target="_blank">
                     <div class="box-img">
-                        <img src="https://api.xinac.net/icon/?url=https://dnipkggqxh.feishu.cn/wiki/C5XGwG6ITiWxNmkEhNOcCtYbntd?sheet=s1sV61">
-                        <span class="name">AI产品榜</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="https://pan.baidu.com/disk/main?from=homeFlow#/index?category=all" class="box-link" target="_blank">
-                    <div class="box-img">
-                        <img src="https://api.xinac.net/icon/?url=https://pan.baidu.com/disk/main?from=homeFlow#/index?category=all">
-                        <span class="name">百度云盘</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="https://mail.qq.com/" class="box-link" target="_blank">
-                    <div class="box-img">
-                        <img src="https://api.xinac.net/icon/?url=https://mail.qq.com/">
-                        <span class="name">QQ邮箱</span>
+                        <img src="https://api.xinac.net/icon/?url=https://ima.qq.com/">
+                        <span class="name">Ima</span>
                     </div>
                 </a>
             </div>
@@ -444,10 +474,18 @@
                 </a>
             </div>
             <div class="col">
-                <a href="https://guatizi.com/" class="box-link" target="_blank">
+                <a href="https://mail.qq.com/" class="box-link" target="_blank">
                     <div class="box-img">
-                        <img src="https://api.xinac.net/icon/?url=https://guatizi.com/">
-                        <span class="name">挂梯子</span>
+                        <img src="https://api.xinac.net/icon/?url=https://mail.qq.com/">
+                        <span class="name">QQ邮箱</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.1688.com/" class="box-link" target="_blank">
+                    <div class="box-img">
+                        <img src="https://api.xinac.net/icon/?url=https://www.1688.com/">
+                        <span class="name">1688</span>
                     </div>
                 </a>
             </div>
@@ -476,66 +514,27 @@
                 </a>
             </div>
             <div class="col">
-                <a href="https://bj.96weixin.com/tools/symbol" class="box-link" target="_blank">
+                <a href="https://weread.qq.com/" class="box-link" target="_blank">
                     <div class="box-img">
-                        <img src="https://api.xinac.net/icon/?url=https://bj.96weixin.com/tools/symbol">
-                        <span class="name">符号大全</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="https://www.xygalaxy.com/quickKeys" class="box-link" target="_blank">
-                    <div class="box-img">
-                        <img src="https://api.xinac.net/icon/?url=https://support.microsoft.com/zh-cn">
-                        <span class="name">快捷键大全</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="https://www.1688.com/" class="box-link" target="_blank">
-                    <div class="box-img">
-                        <img src="https://api.xinac.net/icon/?url=https://www.1688.com/">
-                        <span class="name">1688</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="https://drop.space/space?t=mine" class="box-link" target="_blank">
-                    <div class="box-img">
-                        <img src="https://api.xinac.net/icon/?url=https://drop.space/space?t=mine">
-                        <span class="name">Drop</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="https://greasyfork.org/en" class="box-link" target="_blank">
-                    <div class="box-img">
-                        <img src="https://api.xinac.net/icon/?url=https://greasyfork.org/en">
-                        <span class="name">油猴</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="https://www.bejson.com/" class="box-link" target="_blank">
-                    <div class="box-img">
-                        <img src="https://api.xinac.net/icon/?url=https://www.bejson.com/">
-                        <span class="name">Bejson</span>
+                        <img src="https://api.xinac.net/icon/?url=https://weread.qq.com/">
+                        <span class="name">微信读书</span>
                     </div>
                 </a>
             </div>
 
-            
             
         </div>
     </div>
 
-    <!-- 用于显示分类标题“精选导航”的容器 -->
+
+    
+
     <div class="container title">
         <span>精选导航</span>
     </div>
-    <!-- 主要内容区域的容器，用于放置效率提升分类下的各个相关站点链接等内容 -->
     <div class="container main">
         <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
+            
             <div class="col">
                 <a href="https://szsyw.cn/" class="box-link" target="_blank">
                     <div class="box-img">
@@ -637,29 +636,15 @@
         </div>
     </div>
 
-    <!-- 用于显示分类标题“软件工具”的容器 -->
+
+            
+
     <div class="container title">
         <span>软件工具</span>
     </div>
-    <!-- 主要内容区域的容器，用于放置效率提升分类下的各个相关站点链接等内容 -->
     <div class="container main">
         <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6">
-            <div class="col">
-                <a href="https://ima.qq.com/" class="box-link" target="_blank">
-                    <div class="box-img">
-                        <img src="https://api.xinac.net/icon/?url=https://ima.qq.com/">
-                        <span class="name">Ima</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="https://www.zhiyunwenxian.cn/" class="box-link" target="_blank">
-                    <div class="box-img">
-                        <img src="https://api.xinac.net/icon/?url=https://www.zhiyunwenxian.cn/">
-                        <span class="name">知云文献翻译</span>
-                    </div>
-                </a>
-            </div>
+           
             <div class="col">
                 <a href="https://pdf-xchange.eu/pdf-xchange-editor/" class="box-link" target="_blank">
                     <div class="box-img">
