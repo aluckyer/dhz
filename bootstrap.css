@@ -1,3 +1,23 @@
+/* 2. bootstrap.css（Bootstrap 栅格布局系统）
+
+主要作用
+bootstrap.css 基本是 Bootstrap 框架中与布局相关的核心样式，主要用于：
+提供响应式的页面网格系统（container、row、col-* 等），让页面元素能自适应不同屏幕宽度；
+设定 flex 布局、盒模型、行列结构等基础样式；
+实现复杂的页面排版变得简单、统一且可维护。
+
+详细内容结构
+盒模型初始化：统一设置 box-sizing，防止边距和宽度计算混乱。
+容器类：如 .container、.container-fluid、.container-sm/lg/md/xl，用于页面的最大宽度和自动居中。
+响应式断点：不同屏幕宽度下（如 576px、768px、992px、1200px）容器最大宽度的变化。
+行（row）与列（col）：flexbox 实现行列布局，.row 包裹 .col-* 实现自适应分栏。
+栅格系统：.col-1 ~ .col-12 代表 12 列的分布方式；row-cols-* 控制每行列数；.offset-* 设置偏移。
+自适应排序和偏移：order-* 和 offset-* 支持不同屏幕下的列顺序和位置调整。
+各种屏幕下的专用类：如 .col-sm-, .col-md-, .col-lg-*，分别对应不同尺寸的分布，保证响应式效果。
+总结：bootstrap.css 主要用于快速建立规范、灵活的页面布局骨架，适合做响应式网页。 */
+
+
+
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
